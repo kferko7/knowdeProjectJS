@@ -50,3 +50,6 @@ Thumbs.db
 #cypress
 cypress/videos
 cypress/screenshots
+
+#loginData
+cypress/fixtures
