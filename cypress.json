@@ -1,0 +1,21 @@
+{
+	"watchForFilesChanges": false,
+	"chromeWebSecurity": false,
+	"viewportWidth": 1000,
+	"viewportHeight": 600,
+	"waitForAnimation": true,
+	"animationDistanceTredshold": 20,
+	"exectTimeout": 80000,
+	"defaultCommandTimeout": 10000,
+	"pageLoadTimeout": 8000,
+	"requestTimeout": 40000,
+	"responseTimeout": 40000,
+	"reporter": "mochawesome",
+	"testFiles": "**/*.feature",
+	"env": {
+		"url": "https://www.saucedemo.com"
+	},
+	"video": false,
+	"failOnStatusCode": false
+}
+
