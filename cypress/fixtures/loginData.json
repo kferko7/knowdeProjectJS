@@ -3,5 +3,4 @@
   "password": "secret_sauce",
   "invalidusername": "wrongUsername@test.com",
   "invalidpassword": "wrongPassword"
-  
 }

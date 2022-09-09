@@ -12,6 +12,6 @@ Feature: SuccessOrder
      Then I Navigate to /cart.html
      And I check one quantity Item is there
      And I Click CHECKOUT button
-     And I Fill form with firstname and lastname and click continue button
-     And  I click Finish button 
+     And I Fill form with data required and click continue button
+     And I click Finish button 
      Then I should see message THANK YOU FOR YOUR ORDER on Checkout page
