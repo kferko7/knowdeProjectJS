@@ -24,8 +24,10 @@ export class SuccessOrderPage extends BasePage {
         cy.get('.shopping_cart_badge').click()
     }
 
+	//find its lenghth 
     assertItemQuantityIntoCart() {
-    cy.get('.cart_quantity').should('have.length', 1)
+    //cy.get('.cart_quantity').should('have.length', 1)
+	cy.get('.cart_quantity').its('length').should('eq', 1)
     }
     
     //find locator by id
