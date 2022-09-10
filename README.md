@@ -52,3 +52,6 @@ plugin installed: this helps for all Gherkin syntax in features file
 #Xpath setup:
 -npm install -D cypress-xpath
 -Add require('cypress-xpath') in plugins/index.js --added
+
+#Install View
+npm install cy-view

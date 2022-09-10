@@ -4,7 +4,7 @@ import * as LoginData from '../../fixtures/loginData.json'
 import * as FormData from '../../fixtures/formData.json'
 
 const successOrderPage = new SuccessOrderPage()
-
+//TC02: Success Login with form and order submission
 When('I Add Sauce Labs Backpack to cart', () => {
     successOrderPage.assertSauceLabsBackpack()
     successOrderPage.addAddSauceLabsBackpackToCart()
@@ -12,12 +12,10 @@ When('I Add Sauce Labs Backpack to cart', () => {
 
 Then('I Navigate to /cart.html', () => {
     successOrderPage.navigateToCart()
-
 })
 
 And('I check one quantity Item is there', () => {
     successOrderPage.assertItemQuantityIntoCart()
-
 })
 
 And('I Click CHECKOUT button', () => {
@@ -31,7 +29,8 @@ And('I Fill form with data required and click continue button', () => {
     successOrderPage.continueButton()
 })
 
-And('I click Finish button', () => {
+And('I check Item total price and click Finish button', () => {
+    successOrderPage.assertPrice()
     successOrderPage.finishButton()
 })
 

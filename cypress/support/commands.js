@@ -18,9 +18,11 @@ Cypress.Commands.add('isHidden', selector => {
 })
 
 Cypress.Commands.add('setResolution', selector => {
+	const sizes = ['iPhoneSE', 'iPad Air', 'Ubuntu 20.04.5 LTS', [576, 960][820, 1180][1920, 1080]]
 	if (Cypress._.isArray(size)) {
-		cy.viewport(size[0], size[1])
+		cy.viewport(size[0], size[1], size[2])
 	} else {
 		cy.viewport(size)
+		//cy.visit('https://www.saucedemo.com')
 	}
 })

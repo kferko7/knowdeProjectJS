@@ -3,7 +3,9 @@ import { BasePage } from './BasePage'
 
 export class LoginPage extends BasePage {
 	visit() {
-		cy.visit(`${CONFIG.env.url}/`)
+		//cy.visit(`${CONFIG.env.url}/`)
+		cy.visit(Cypress.env('BASE_URL'))
+		
 	}
 
 	assertPage() {

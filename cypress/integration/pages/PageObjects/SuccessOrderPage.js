@@ -2,8 +2,10 @@ import * as CONFIG from '../../../../cypress.json'
 import { BasePage } from './BasePage'
 
 export class SuccessOrderPage extends BasePage {
+	
 	visit() {
-		cy.visit(`${CONFIG.env.url}/`)
+		//cy.visit(`${CONFIG.env}/`)
+		(Cypress.env('HOME_PAGE_URL'))
 	}
    
     assertSauceLabsBackpack() {
@@ -27,7 +29,9 @@ export class SuccessOrderPage extends BasePage {
 	//find its lenghth 
     assertItemQuantityIntoCart() {
     //cy.get('.cart_quantity').should('have.length', 1)
-	cy.get('.cart_quantity').its('length').should('eq', 1)
+	cy.get('.cart_quantity')
+	.its('length')
+	.should('eq', 1)
     }
     
     //find locator by id
@@ -58,6 +62,12 @@ export class SuccessOrderPage extends BasePage {
 		return this
 	}
 
+	//has price --find by css locator
+	assertPrice() {
+		cy.get('.inventory_item_price').contains('$29.99')
+		cy.get('.summary_total_label').contains('Total: $32.39')
+
+	}
     //find locator by customized name
     continueButton() {
 		cy.get("input[name=continue]")
