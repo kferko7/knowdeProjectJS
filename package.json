@@ -9,7 +9,8 @@
     "test": "node_modules\\.bin\\cypress run",
     "headTest": "npm run test -- -- headed",
     "chromeTest": "npm run test -- -- browser chrome",
-    "firefoxTest": "npm run test -- -- browser firefox"
+    "firefoxTest": "npm run test -- -- browser firefox",
+    "mochawesome": "npx mocha --reporter mochawesome"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,7 @@
   "author": "Kim Ferko",
   "license": "ISC",
   "dependencies": {
+    "cy-view": "^1.0.11",
     "cypress": "^9.6.1"
   },
   "devDependencies": {

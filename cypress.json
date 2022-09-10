@@ -1,9 +1,9 @@
 {
 	"watchForFilesChanges": false,
 	"chromeWebSecurity": false,
+	"waitForAnimation": true,
 	"viewportWidth": 1000,
 	"viewportHeight": 600,
-	"waitForAnimation": true,
 	"animationDistanceTredshold": 20,
 	"exectTimeout": 80000,
 	"defaultCommandTimeout": 10000,
@@ -13,7 +13,8 @@
 	"reporter": "mochawesome",
 	"testFiles": "**/*.feature",
 	"env": {
-		"url": "https://www.saucedemo.com"
+		"BASE_URL": "https://www.saucedemo.com",
+		"HOME_PAGE_URL": "https://www.saucedemo.com/inventory.html"
 	},
 	"video": false,
 	"failOnStatusCode": false

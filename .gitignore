@@ -46,10 +46,8 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db 
+cypress/fixtures/loginData.json
 
 #cypress
 cypress/videos
 cypress/screenshots
-
-#loginData for login
-cypress/fixtures/loginData.json

@@ -1,6 +1,5 @@
 Feature: LoginPage
    #TC02: Success Login
-
     Background: Positive Login: Login with valid credentials into Login form
         Given I login with valid credentials
         When I click on Login button
