@@ -43,6 +43,9 @@ Run all:
 How to run reports:
 -npx mocha --reporter mochawesome
 
+#To generate a report for all specs in the integration folder of the Cypress project, run the command
+ −npx cypress run
+
 #Newman is installed:
 npm i --save-dev newman -then should be installed in "package.json"
 
