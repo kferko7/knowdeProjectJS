@@ -50,7 +50,11 @@ export class LoginPage extends BasePage {
 			timeout: 10000,
 		})
 	}
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> update order branch
 	expectedErrorWrongPassword() {
 		cy.get("h3[data-test='error']").should('be.visible', {
 			timeout: 10000,
