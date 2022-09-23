@@ -16,8 +16,7 @@ export class SuccessOrderPage extends BasePage {
     }
 
     addAddSauceLabsBackpackToCart() {
-        cy.get("button[data-test='add-to-cart-sauce-labs-backpack']").should('be.visible').click()
-        
+       cy.get("button[data-test='add-to-cart-sauce-labs-backpack']").should('be.visible').click()
     }
     
     navigateToCart(){
