@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2022-09-10T16:26:05.778Z",
-    "end": "2022-09-10T16:26:11.217Z",
-    "duration": 5439,
+    "start": "2022-09-10T16:56:57.463Z",
+    "end": "2022-09-10T16:57:02.932Z",
+    "duration": 5469,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "f583f7cd-604d-417f-8890-976dbd3cf625",
+      "uuid": "83152d69-327a-470a-b580-6416df3d45e7",
       "title": "",
       "fullFile": "cypress/integration/cucumber-tests/successOrder.feature",
       "file": "cypress/integration/cucumber-tests/successOrder.feature",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "91b26c4e-5a44-4869-8817-fd629454791a",
+          "uuid": "04ee0877-789f-403c-9900-862e1d776aa0",
           "title": "SuccessOrder",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Success Order",
               "fullTitle": "SuccessOrder Success Order",
               "timedOut": null,
-              "duration": 3330,
+              "duration": 3420,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
               "err": {},
-              "uuid": "9deb8ff6-943a-433f-ac2e-9a700ba0b074",
-              "parentUUID": "91b26c4e-5a44-4869-8817-fd629454791a",
+              "uuid": "54305c60-f40e-488a-8d06-8dbc8a7a33dd",
+              "parentUUID": "04ee0877-789f-403c-9900-862e1d776aa0",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "9deb8ff6-943a-433f-ac2e-9a700ba0b074"
+            "54305c60-f40e-488a-8d06-8dbc8a7a33dd"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 3330,
+          "duration": 3420,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
